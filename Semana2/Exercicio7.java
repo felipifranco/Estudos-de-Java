@@ -14,7 +14,7 @@ public class Exercicio7 {
         return Math.sqrt(2*alturaEmCentimetros/100/9.8);
     }
 
-    static double tempoDeQueda_Alternativo(int alturaEmCentimetros){
+    static double tempoDeQueda_Alternativo(double alturaEmCentimetros){
         double alturaEmMetros = alturaEmCentimetros/100;
         double gravidade = 9.8;
         return Math.sqrt(2*alturaEmMetros/gravidade);
