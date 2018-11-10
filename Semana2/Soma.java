@@ -6,15 +6,15 @@ public class Soma {
 
         Scanner input = new Scanner(System.in);
 
-        int num1;
-        int num2;
-        int sum;
+        double num1;
+        double num2;
+        double sum;
 
         System.out.printf("Primeiro numero:");
-        num1 = input.nextInt();
+        num1 = input.nextDouble();
         
         System.out.printf("Segundo numero:");
-        num2 = input.nextInt();
+        num2 = input.nextDouble();
 
         sum = num1 + num2;
 
