@@ -18,8 +18,15 @@ public class Ex5 {
     static char[] subString(char[] frase, int ini, int fim){
         char[] result = new char[fim-ini+1];
 
-        for(int i=0; i < result.length; i++, ini++ ){
+        // for(int i=0; i < result.length; i++, ini++ ){
+        //     result[i] = frase[ini];
+        // }
+        // return result;
+
+        // ou assim....
+        for(int i=0; i < result.length; i++){
             result[i] = frase[ini];
+            ini++;
         }
         return result;
     }
