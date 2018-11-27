@@ -28,33 +28,35 @@
 
 // retorno -> {true, false, true, false, false}
 
-/**
- * Ex3
- */
 public class Ex3 {
     static boolean[] checkQuadra(int[][] jogos, int[] sorteio) {
-
-        // cria um novo vetor de boolean com o numero de jogos feitos (numero de vetores em i)
+        // cria um novo vetor de boolean com o numero de jogos feitos(numero de vetores em i)
         boolean[] ganhou = new boolean[jogos.length];
-        // CÓDIGO A SER UTILIZADO
-        for (int i = 0; i < ganhou.length; i++) {
-            // a inicialização padrão de bollean em java é false
-            // boolean[] acerto = new boolean[ganhou.length];
-            // ou
+
+        for(int i=0; i < ganhou.length ; i++){
+            // a inicializacao padra de bollean em java eh false
+            // boolean[] acerto = new boolean[sorteio.length];
+            // podemos tambem inicializar o vetor de acertos em false passando os valores e tamanho
             boolean[] acerto = {false, false, false, false};
-            // então não é preciso inicializar em false
 
-            //
-            for (int palpite : jogos[i]) {
-
-                //verifica se o valor do jogo é igual a um dos valores sorteados
+            System.out.printf("Percorrendo os jogos de i=[" + i + "]:\n");
+            for(int palpite : jogos[i]){
+                // se um dos valores do vetor coluna de jogos[i] for igual ao sorteio, tranforma o vetor acerto na devida posicao do acerto em verdadeiro
                 if(palpite == sorteio[0]) {acerto[0] = true;}
                 if(palpite == sorteio[1]) {acerto[1] = true;}
                 if(palpite == sorteio[2]) {acerto[2] = true;}
                 if(palpite == sorteio[3]) {acerto[3] = true;}
                 System.out.print(palpite + " ");
             }
-            // se o jogo tiver 4 acertos, passa para o vetor ganhou na posição do jogo o valor verdadeiro
+
+            System.out.printf("\nPercorrendo o vetor de acertos:\n");
+            for(boolean result : acerto){
+                System.out.print(result + "\t");
+            }
+            System.out.println("");
+            System.out.println("");
+
+            // verifica se as 4 posicoes do vetor de acerto é verdadeira
             ganhou[i] = acerto[0] && acerto[1] && acerto[2] && acerto[3];
         }
         return ganhou;
@@ -64,13 +66,15 @@ public class Ex3 {
         int[][] jogos = {   {1, 2, 3, 4,  5,  6},
                             {1, 2, 5, 7,  9, 11},
                             {1, 3, 5, 6,  9, 10},
-                            {2, 3, 4, 5,  6,  7},
+                            {2, 4, 7, 8,  9, 10},
                             {1, 3, 6, 9, 12, 15}
         };
         int[] sorteio = {1, 3, 5, 6};
 
         boolean[] resultado = checkQuadra(jogos, sorteio);
 
+        System.out.print("Resultado: ");
+        // imprime por valor o vetor resultado
         for (boolean val : resultado) {
                 System.out.print(val + " ");
         }
