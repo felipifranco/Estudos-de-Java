@@ -1,5 +1,6 @@
 public class Jogar {
     public static void main(String[] args) {
+        System.out.println("Criando um novo tabuleiro t1:");
         Tabuleiro t1 = new Tabuleiro(10);
         t1.printTabuleiro();
 
