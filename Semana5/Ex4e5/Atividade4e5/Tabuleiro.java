@@ -81,10 +81,10 @@ public class Tabuleiro {
     }
 
     public boolean atirar(int x, int y) {
-    if (this.mar[x][y] == 1) {
-        this.mar[x][y] = 2;
-        return true;
-    }
+        if (this.mar[x][y] == 1) {
+            this.mar[x][y] = 2;
+            return true;
+        }
     return false;
     }
 
