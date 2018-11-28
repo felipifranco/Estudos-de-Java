@@ -30,7 +30,7 @@ public class Jogar {
         Tabuleiro t2 = new Tabuleiro(8);
         t2.printTabuleiro();
 
-        System.out.println("Colocando navio em t2 [2][2], [3][3], [4][4]:");
+        System.out.println("Colocando navio em t2 [5][5], [6][6], [7][7]:");
         t2.colocarNavio(5, 5);
         t2.colocarNavio(6, 6);
         t2.colocarNavio(7, 7);
@@ -66,13 +66,5 @@ public class Jogar {
         System.out.print(t2.contarNavios());
         System.out.println("");
 
-        //System.out.println("######################################################");
-
-        // for (int[] linha : t1.mar) {
-        //     for (int valor : linha) {
-        //         System.out.print(valor + "  ");
-        //     }
-        // System.out.println("");
-        // }
     }
 }

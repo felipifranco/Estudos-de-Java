@@ -70,13 +70,13 @@ public class Tabuleiro {
     }
 
     public int contarNavios() {
-    int contador = 0;
-    //for (int[] linha : mar) {
-    for (int[] linha : this.mar) {
-        for (int valor : linha) {
-            if (valor == 1) { contador++; }
+        int contador = 0;
+        //for (int[] linha : mar) {
+        for (int[] linha : this.mar) {
+            for (int valor : linha) {
+                if (valor == 1) { contador++; }
+            }
         }
-    }
     return contador;
     }
 
