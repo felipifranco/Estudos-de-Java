@@ -4,9 +4,9 @@
 
 **Bimestre 4, Engenharia de Computação.**
 
-## Atualizações
+## Codigo dos vídeos
 
-* Semana 1
+* =)
 
 ## YouTube
 <a rel="license" href="https://www.youtube.com/channel/UCxNe0xjPOe-keP18vhWiYRQ">YouTube: /felipimfranco</a>.
